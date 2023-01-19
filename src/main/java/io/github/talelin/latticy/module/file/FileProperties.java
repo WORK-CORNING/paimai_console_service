@@ -1,8 +1,6 @@
 package io.github.talelin.latticy.module.file;
 
-import io.github.talelin.latticy.common.factory.YamlPropertySourceFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,10 +8,7 @@ import org.springframework.stereotype.Component;
  * 文件配置类
  */
 @Component
-@ConfigurationProperties("lin.file")
-@PropertySource(
-        value = "classpath:io/github/talelin/latticy/extension/file/config.yml",
-        encoding = "UTF-8", factory = YamlPropertySourceFactory.class)
+@ConfigurationProperties(prefix = "lin.file")
 public class FileProperties {
 
     private static final String[] DEFAULT_EMPTY_ARRAY = new String[0];

@@ -9,10 +9,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>io.github.talelin</groupId>
-    <artifactId>latticy</artifactId>
-    <version>0.2.1-RELEASE</version>
-    <name>latticy</name>
+    <groupId>com.kangping</groupId>
+    <artifactId>paimai-console-service</artifactId>
+    <version>1.0.0</version>
+
+    <name>paimai-console-service</name>
     <description>Demo project for lin cms</description>
 
     <properties>

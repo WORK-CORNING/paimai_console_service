@@ -8,9 +8,9 @@ spring:
   # 数据源配置，请修改为你项目的实际配置
   datasource:
     username: "root"
-    password: "123456"
+    password: "g3f3kjFgg22"
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/lin-cms?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    url: jdbc:mysql://81.70.248.62:3306/paimai_car?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
 
 # 开启权限拦截
 auth:
@@ -25,5 +25,13 @@ login-captcha:
 request-log:
   enabled: true
 
-
+lin:
+  #文件上传配置
+  file:
+    # 文件服务域名
+    domain: http://81.70.248.62/service/
+    # 服务器文件路径
+    serve-path: /deploy/paimai/assets/**
+    # 本地文件保存位置
+    store-dir: /deploy/paimai/assets/
 

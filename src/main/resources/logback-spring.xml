@@ -20,10 +20,10 @@
     <!--输出到 access 文件夹-->
     <appender name="FILE_ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/access/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_access.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
@@ -40,10 +40,10 @@
     <!--输出到 error 文件夹-->
     <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/error/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_error.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
             <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
@@ -60,10 +60,10 @@
     <!--输出到 warn 文件夹-->
     <appender name="FILE_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/warn/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_warn.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
@@ -80,10 +80,10 @@
     <!--输出到 info 文件夹-->
     <appender name="FILE_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/info/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_info.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
@@ -100,10 +100,10 @@
     <!--输出到 debug 文件夹-->
     <appender name="FILE_DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/debug/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_debug.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
@@ -120,10 +120,10 @@
     <!--输出到 trace 文件夹-->
     <appender name="FILE_TRACE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/trace/%d{yyyy-MM,aux}/%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>logs/%d{yyyy-MM-dd}_trace.%i.log</fileNamePattern>
             <totalSizeCap>1GB</totalSizeCap>
-            <maxHistory>30</maxHistory>
-            <maxFileSize>5MB</maxFileSize>
+            <maxHistory>3</maxHistory>
+            <maxFileSize>100MB</maxFileSize>
         </rollingPolicy>
         <encoder>
             <charset>UTF-8</charset>
